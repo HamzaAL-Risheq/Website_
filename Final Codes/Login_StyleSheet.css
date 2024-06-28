@@ -1,0 +1,81 @@
+*{
+    margin-top:  0; 
+    margin-bottom: 0;
+    margin-right:  0; 
+    margin-left: 0; 
+}
+body {
+    background-color:#BFADA3; 
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1 {
+    flex-shrink: 0;
+    color: #1E2126;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Tangerine; 
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+}
+h2 {
+    
+    color: #1E2126;
+    font-family: Tangerine; 
+    font-size: 10px;
+    font-weight: 700;
+    position: relative;
+    top: 3%;
+    left: 0.4%;
+}
+input {
+    flex-shrink: 0;
+    position: relative;
+    bottom: 5%;
+    left: -2%;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+}
+#PasswordLabel {
+    top: -5%;
+}
+label {
+    display: flex;
+    position: relative;
+    flex-shrink: 0;
+    color: #1E2126;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    top: 6%;
+}
+button {
+    display: flex;
+    align-items: center;
+    text-emphasis-color:#1E2126 ;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #1E2126;
+    position: relative;
+    bottom: -2%;
+    left: -1%;
+    color: #9B8484;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: center; 
+}
+
+@media only screen and (min-width: 401px) and (max-width: 1200px) {
+    h2 {
+        left: 2%;
+    }
+}

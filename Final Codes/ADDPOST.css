@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-rows: auto 1fr auto; /* Header, body, footer */
+    min-height: 100vh;
+    background-color: #BFADA3;
+}
+.header {
+    background-color: #BFADA3;
+    color: #1E2126;
+    text-align: center;
+    padding: 1%;
+    grid-row: 1; /* Header is in the first row */
+}
+.company-name {
+    color: #1E2126; /* Text color */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Text shadow */
+    font-family: Tangerine; /* Font family */
+    font-size: 25px; /* Font size */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 6%;
+    position: relative;
+    right: 9%;
+}
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    height: 35px;
+    grid-row: 2; /* Navbar is in the second row */
+}
+.navbar-left {
+    flex-basis: 60%; /* 925px width */
+    background-color: rgba(217, 217, 217, 38%); /* Blood red color */
+    padding: 0; /* Remove padding */
+}
+.navbar-right {
+    flex-basis: 40%; /* 600px width */
+    text-align: right;
+    background-color: rgba(214, 209, 209, 69%);
+    backdrop-filter: blur(2px); /* Black color */
+    padding: 0; /* Remove padding */
+    display: flex;
+    
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-family: Tangerine; /* Font family */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 1%;
+
+}
+.navbar li {
+    margin-right: 5%;
+    margin-left: 2%;
+}
+.navbar a {
+    text-decoration: none;
+    color: #1E2126;
+    font-size: 18px;
+}
+.navbar a:hover {
+    font-weight: bold;
+}
+.main-content {
+    padding: 20px;
+    grid-row: 3; /* Body is in the third row */
+}
+.company-logo {
+    max-height: 20%;
+    max-width: 20%;
+    position: relative;
+    right: 40%;
+}
+.user-logo {
+    font-size: 150%;
+}
+/* Additional styles for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+/* Additional styles for the search bar */
+.search-input {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(156, 98, 98, 0); /* Grey background color */
+    position: relative;
+    left: 16%;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+.search-button {
+    background-color:rgba(214, 209, 209, 0); /* Gray color */
+    color:rgba(107, 107, 107, 1);
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    bottom  : 7.5%;
+    left: 1%;
+}
+.Blogs i {
+    margin-right: 10px;
+}
+.Askforhelp i {
+    margin-right: 10px;
+}
+.company-logo {
+    max-height: 20%;
+    max-width: 20%;
+    position: relative;
+    right: 40%;
+}
+
+#textbox {
+    padding-top: 0.3%;
+    font-family: Tangerine; /* Font family */
+    padding: 0.5%;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    height: 30%;
+    width: 60%;
+    background-color: rgba(217, 217, 217, 38%);
+    grid-row-start: 2;
+    resize: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: none;
+} 
+.textboxButton {
+    position: relative;
+    width: 10%;
+    height: 100%;
+    bottom: 420%;
+    left: 60%;
+    border-radius: 10px;
+    background: #1E2126;
+    color: #9B8484;
+    font-family: Tangerine; /* Font family */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    display: flex;
+    justify-content:center;
+}
+.textboxButton:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}    
+.footer {
+    background-color: rgba(217, 217, 217, 38%);
+    color:#1E2126;
+    text-align: center;
+    padding: 0.3%;
+}
+@media only screen and (max-width: 1200px) {
+    #textbox {
+        padding-top: 1.3%;
+        padding-left: 1.3%;
+        height: 40%;
+        width: 80%;
+        top: 20%;
+        }
+    .textboxButton {
+        width: 35%;
+        left: 55%;
+        bottom: 450%;  
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 10%;
+    }
+    .company-logo {
+        max-height: 20%;
+        max-width: 20%;
+    }
+    .company-name {
+        position: relative;
+        right: 25%;
+    }
+    .navbar-left,
+    .navbar-right {
+        flex-basis: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1em;
+    }
+    .search-bar {
+        display: block;
+        text-align: center;
+    }
+    .search-input {
+        width: 80%; /* Adjust as needed */
+        margin: 5px auto;
+    }
+    .navbar li {
+        margin: 5px 0;
+    }
+    .search-button {
+        bottom  : 14%;
+        left: 4%;
+    }
+    .footer {
+        text-align: center;
+        padding: 5px;
+    }
+
+}
